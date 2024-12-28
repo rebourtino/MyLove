@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForMyLove</title>
+    <link rel="icon" href="content\icon.png">
+    <link rel="stylesheet" href="css/MyLove.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="WelcomeBox">
+        <h1 class="WelcomeTitle">For Ethel</h1>
+    </div>
+
+    <!-- Audio player element -->
+    <audio id="audioPlayer" src="content/cats-in-the-cold.mp3" preload="auto"></audio>
+
+    <!-- Play button -->
+    <button id="playButton">Play</button>
+
+    <script>
+        // Get the audio player and button
+        const audioPlayer = document.getElementById("audioPlayer");
+        const playButton = document.getElementById("playButton");
+
+        // Play the audio when the button is clicked
+        playButton.addEventListener("click", function() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.textContent = "Pause";  // Change button text to "Pause"
+            } else {
+                audioPlayer.pause();
+                playButton.textContent = "Play";  // Change button text to "Play"
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- add a slider showing my love for her -->
+ <!-- timer of the time we been together -->
+  <!-- poem -->
