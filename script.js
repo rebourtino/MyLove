@@ -1,5 +1,5 @@
 // Set your start date
-const startDate = new Date('2024-03-20T14:00:00'); // Replace with your date
+const startDate = new Date('2024-03-20T18:00:00'); // Replace with your date
 
 function updateTimer() {
   const now = new Date();
