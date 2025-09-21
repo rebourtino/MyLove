@@ -38,9 +38,24 @@ body {
     text-align: center; /* Centers the text inside the box */
 }
 
+.box{
+    background-color: #e91e622c;
+
+    width: 27%;
+    height: 20%;
+
+    /* Center the box */
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Rounded borders */
+}
+
 .WelcomeBox {
-    width: 80%;
-    height: 50%;
+    width: 27%;
+    height: 9%;
 
     /* Center the box */
     position: absolute;
@@ -60,12 +75,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    text-shadow: 
-        2px 2px 0 rgba(0, 0, 0, 0.75), /* Horizontal, vertical, blur, color */
-        -2px -2px 0 rgba(0, 0, 0, 0.75),
-        2px -2px 0 rgba(0, 0, 0, 0.75),
-        -2px 2px 0 rgba(0, 0, 0, 0.75); /* Multiple shadows for full outline effect */
-   
+    text-overflow: clip;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    text-
 }
 
 p {

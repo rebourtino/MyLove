@@ -21,10 +21,13 @@
 
     <!-- <p class="WelcomeTitle" style="font-size: 45px; text-align: center;">For Ethel</p>  -->
 
-    <div id="timer_text" class="WelcomeBox"> 
-        <p class="WelcomeMessage" id="timeElapsed">Loading...</p>
+    <div id="box_text" class="box"></div>
+    <strong><p class="WelcomeMessage">We Have been together for:</p></strong>
+        <div id="timer_text" class="WelcomeBox"> 
+            <strong><p class="WelcomeMessage" id="timeElapsed">Loading...</p></strong>
+        </div>
+    <strong><p class="WelcomeMessage">From 20 march 2024</p></strong>
     </div>
-
 
     <!-- Hidden Audio Player -->
     <audio id="audioPlayer" src="content/cats-in-the-cold.mp3" preload="auto"></audio>
@@ -40,10 +43,13 @@
             const popup = document.getElementById("popup");
             const audioPlayer = document.getElementById("audioPlayer");
             const timer_text = document.getElementById("timer_text");
+            const box_text = document.getElementById("box_text");
+            
     
             // Hide the popup immediately
             popup.style.display = "none"; // This should work to hide the popup
             timer_text.style.display = "flex";
+            box_text.style.display = "flex";
     
             // Play the audio
             audioPlayer.play().catch(error => {
