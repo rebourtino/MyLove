@@ -38,23 +38,31 @@ body {
     text-align: center; /* Centers the text inside the box */
 }
 
-.box{
-    background-color: #e91e622c;
+.box_text {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+}
 
-    width: 27%;
-    height: 20%;
-
-    /* Center the box */
-    position: absolute;
-    top: 50%;   
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    /* Rounded borders */
+.box {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.750);
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  font-size: 30px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
 }
 
 .WelcomeBox {
-    width: 27%;
+    width: 35%;
     height: 9%;
 
     /* Center the box */
@@ -79,11 +87,11 @@ body {
 
     background-color: rgba(255, 255, 255, 0.95);
 
-    text-
+    font-size: 30px;
 }
 
 p {
-    font-size: 30px;
+    /* font-size: 30px; */
     font-family: "Hi Melody", sans-serif;
 }
 
@@ -99,6 +107,7 @@ p {
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    font-size: 30px;
 }
 
 #timer_text {
@@ -118,4 +127,21 @@ p {
 }
 .popup button:hover {
     background-color: #e91e63;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #e91e625a;
+  color: #fff;
+  text-align: center;
+  font-family: "Hi Melody", sans-serif;
+  font-size: 15px;
+  padding: 4px 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.12);
+  z-index: 1001;
+}
+.footer p {
+  margin: 0;
 }
