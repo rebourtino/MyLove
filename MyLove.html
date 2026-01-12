@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForMyLove</title>
-    <link rel="icon" href="content/icon.png">
-    <link rel="stylesheet" href="css/MyLove.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-</head>
-<body>
-    
-     <!-- Video background -->
-     <video class="video-background" autoplay muted loop playsinline>
-        <source src="content/hello-kitty-with-friends.3840x2160.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ForMyLove</title>
+        <link rel="icon" href="content/icon.png">
+        <link rel="stylesheet" href="css/MyLove.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+        <!-- Video background -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="content/hello-kitty-with-friends.3840x2160.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-    <!-- <p class="WelcomeTitle" style="font-size: 45px; text-align: center;">For Ethel</p>  -->
+        <!-- <p class="WelcomeTitle" style="font-size: 45px; text-align: center;">For Ethel</p>  -->
 
-    <div id="box_text" class="box"></div>
-    <strong><p class="WelcomeMessage">We Have been together for:</p></strong>
+        <div id="box_text" class="box">
+            <strong><p class="WelcomeMessage">We Have been together for:</p></strong>
+            <br>
+            <strong><p class="WelcomeMessage">From 20 march 2024</p></strong>
+        </div>
+
         <div id="timer_text" class="WelcomeBox"> 
             <strong><p class="WelcomeMessage" id="timeElapsed">Loading...</p></strong>
         </div>
-    <strong><p class="WelcomeMessage">From 20 march 2024</p></strong>
-    </div>
-
-    <!-- Hidden Audio Player -->
-    <audio id="audioPlayer" src="content/cats-in-the-cold.mp3" preload="auto"></audio>
-
-    <!-- Popup Message -->
-    <div id="popup" class="popup">
-        <p>Are you the love of my life? 🤨</p>
-        <button id="popupButton">Yes ❤️</button>
-    </div>
-    
-    <script>
-        document.getElementById("popupButton").addEventListener("click", function () {
-            const popup = document.getElementById("popup");
-            const audioPlayer = document.getElementById("audioPlayer");
-            const timer_text = document.getElementById("timer_text");
-            const box_text = document.getElementById("box_text");
             
-    
-            // Hide the popup immediately
-            popup.style.display = "none"; // This should work to hide the popup
-            timer_text.style.display = "flex";
-            box_text.style.display = "flex";
-    
-            // Play the audio
-            audioPlayer.play().catch(error => {
-                console.error("Audio play failed:", error);
-            });
-        });
-    </script>
-    
+        <!-- Hidden Audio Player -->
+        <audio id="audioPlayer" src="content/cats-in-the-cold.mp3" preload="auto"></audio>
 
+        <!-- Popup Message -->
+        <div id="popup" class="popup">
+            <strong><p>Are you the love of my life? 🤨</p></strong>
+            <strong><button id="popupButton">Yes ❤️</button></strong>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ by Tim Dec 28, 2024</p>
+        </div>
         
-
-</body>
+        <script>
+            document.getElementById("popupButton").addEventListener("click", function () {
+                const popup = document.getElementById("popup");
+                const audioPlayer = document.getElementById("audioPlayer");
+                const timer_text = document.getElementById("timer_text");
+                const box_text = document.getElementById("box_text");
+                
+        
+                // Hide the popup immediately
+                popup.style.display = "none"; // This should work to hide the popup
+                timer_text.style.display = "flex";
+                box_text.style.display = "flex";
+        
+                // Play the audio
+                audioPlayer.play().catch(error => {
+                    console.error("Audio play failed:", error);
+                });
+            });
+        </script>
+    </body>
 </html>
